@@ -3,9 +3,10 @@
 	"version": "0.1.0",
 	"main": "index.js",
 	"scripts": {
-		"start": "npm run build && node ./build/index.js",
+		"start": "node ./build/index.js",
 		"build": "npm run tsc",
-		"dev": "ts-node-dev --respawn --transpile-only index.ts"
+		"dev": "ts-node-dev --respawn --transpile-only index.ts",
+		"tsc": "tsc"
 	},
 	"author": "Hazem Krimi",
 	"license": "ISC",
@@ -23,5 +24,8 @@
 		"@types/uuid": "^8.3.1",
 		"ts-node-dev": "^1.1.8",
 		"typescript": "^4.3.5"
+	},
+	"engines": {
+		"node": "12.x"
 	}
 }
